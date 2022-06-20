@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+    background-color: rgb(167, 205, 218);
+}
+.container{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.add-task-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#add-task-input, #add-task-btn, .task-field, .button{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: white;
+}
+::placeholder{
+    color: rgb(145, 180, 192);
+    font-family: poppins;
+}
+input, textarea{
+    font-family: poppins;
+    font-weight: 400;
+}
+#add-task-input{
+    width: 87%;
+    height: 40px;
+    padding: 10px;
+    color: rgb(145, 180, 192);
+}
+#add-task-btn{
+    width: 40px;
+    color: rgb(145, 180, 192);
+    cursor: pointer;
+}
+#add-task-btn:hover{
+    background-color: rgb(238, 215, 153);
+    color: white;
+}
+h2{
+    margin-top: 50px;
+    color: white;
+    font-weight: 500;
+}
+#task-list{
+    width: 100%;
+}
+.task-field{
+    width: 250px;
+    height: 35px;
+    margin: 10px 0;
+    padding: 10px;
+    color: rgb(145, 180, 192);
+}
+.edit-btn, .delete-btn, .done-btn, .new-delete-btn{
+    width: 40px;
+    height: 35px;
+    margin-left: 10px;
+    color: rgb(145, 180, 192);
+    cursor: pointer;
+}
+.edit-btn:hover, .delete-btn:hover, .done-btn:hover, .new-delete-btn:hover{
+    background-color: rgb(238, 215, 153);
+    color: white;
+}
+.completed-input{
+    text-decoration: line-through;
+}
